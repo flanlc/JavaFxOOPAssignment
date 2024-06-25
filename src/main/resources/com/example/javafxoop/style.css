@@ -1,0 +1,22 @@
+.root {
+    -fx-background-color: #964B00;
+    -fx-font-family: "Comic Sans MS";
+}
+.button {
+    -fx-background-color: #C4A484;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic Sans MS";
+}
+.menu-bar {
+    -fx-background-color: #5A2E0C;
+    -fx-font-family: "Comic Sans MS";
+}
+.table-column-header {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic Sans MS";
+}
+.vbox {
+    -fx-background-color: #90EE90;
+    -fx-font-family: "Comic Sans MS";
+}

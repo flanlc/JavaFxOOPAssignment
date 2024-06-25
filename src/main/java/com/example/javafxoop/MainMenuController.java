@@ -1,8 +1,11 @@
 package com.example.javafxoop;
 
+import javafx.beans.Observable;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
 
 public class MainMenuController {
     @FXML
@@ -59,5 +62,7 @@ public class MainMenuController {
     private MenuItem menuItemAbout;
     @FXML
     private ImageView imageView;
+    @FXML
+    private VBox vbox;
 
 }
