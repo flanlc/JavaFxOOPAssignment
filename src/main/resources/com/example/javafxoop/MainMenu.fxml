@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxoop.MainMenuController">
+   <children>
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="827.0">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuItemClose" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuEdit" mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="menuItemDelete" mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuTheme" mnemonicParsing="false" text="Theme">
+               <items>
+                  <MenuItem fx:id="menuItemEdit" mnemonicParsing="false" text="Edit" />
+               </items>
+            </Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tableView" layoutX="126.0" layoutY="25.0" prefHeight="589.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="31.0" text="ID" />
+          <TableColumn fx:id="firstNameCol" prefWidth="99.0" text="First Name" />
+            <TableColumn fx:id="lastNameCol" prefWidth="112.0" text="Last Name" />
+            <TableColumn fx:id="deptCol" prefWidth="90.0" text="Department" />
+            <TableColumn fx:id="majorCol" prefWidth="75.0" text="Major" />
+            <TableColumn fx:id="emailCol" prefWidth="106.0" text="Email" />
+        </columns>
+      </TableView>
+      <TextField fx:id="firstNameField" layoutX="648.0" layoutY="33.0" prefHeight="32.0" prefWidth="171.0" promptText="First Name" />
+      <TextField fx:id="lastNameField" layoutX="648.0" layoutY="70.0" prefHeight="32.0" prefWidth="171.0" promptText="Last Name" />
+      <TextField fx:id="deptField" layoutX="648.0" layoutY="109.0" prefHeight="32.0" prefWidth="171.0" promptText="Department" />
+      <TextField fx:id="majorField" layoutX="648.0" layoutY="148.0" prefHeight="32.0" prefWidth="171.0" promptText="Major" />
+      <TextField fx:id="imgURLField" layoutX="648.0" layoutY="224.0" prefHeight="32.0" prefWidth="171.0" promptText="ImageURL" />
+      <TextField fx:id="emailField" layoutX="648.0" layoutY="185.0" prefHeight="32.0" prefWidth="171.0" promptText="Email" />
+      <Button fx:id="editButton" layoutX="654.0" layoutY="558.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="164.0" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="652.0" layoutY="503.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="164.0" text="Delete" />
+      <Button fx:id="addButton" layoutX="652.0" layoutY="453.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="164.0" text="Add" />
+      <Button fx:id="clearButton" layoutX="654.0" layoutY="402.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="164.0" text="Clear" />
+      <ImageView fx:id="imageView" fitHeight="112.0" fitWidth="104.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile_empty.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
